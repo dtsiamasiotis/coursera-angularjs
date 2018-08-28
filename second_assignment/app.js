@@ -11,7 +11,6 @@
     function ToBuyController(ShoppingListCheckOffService) {
         var toBuy = this;
         toBuy.items = ShoppingListCheckOffService.getToBuyItems();
-        //console.log(items);
 
         toBuy.moveToBoughtItems = function(index) {
             ShoppingListCheckOffService.moveToAlreadyBought(index);

@@ -1,0 +1,7 @@
+<ol>
+<li ng-repeat="item in list.foundItems">
+    {{item.description}}
+    <button ng-click="list.onRemove({index:$index});">I don't want this!</button>
+</li>
+</ol>
+<div class="error" ng-if="list.isEmpty()">Nothing found!</div>
